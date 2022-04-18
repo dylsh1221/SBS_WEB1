@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>form</title>
 </head>
-<body>
+<from>
 	<!-- 
 		form 태그
 		: 클라이언트에서 서버로 데이터를 제출해주는 양식 태그
@@ -66,14 +66,49 @@
 	  -->
 	 
 	 <!-- 여기에 작성해보세요:) -->
-	
+	<form action="logln" method="post">
+		<label for="id">아이디</label>
+		<input type="text" name="user_id" id="id"> <br>
+
+		<label for="pw">비밀번호</label>
+		<input type="password" name="user_pw" id="pw"> <br>
+
+		<input type="submit" value="전송">
+	</form>
 	 
 	 <hr>
 	 
 	 <!-- 여기에 작성해보세요:) -->
+	<form action="input" method="post">
+		ID			: <input type="text" name="id"> <br>
+		PW			: <input type="password" name="password"> <br>
+		email		: <input type="email" name="email"> <br>
+		ur1			: <input type="ur1" name="ur1"> <br>
+		tel			: <input type="tel" name="tel"> <br>
+		color		: <input type="color" name="coior"> <br>
+
+		radio(성별)	:
+					  <label for="female">여자</label>
+					  <input type="radio" name="">
+		
+		checkbox(취미)
+
+		date			: <input type="date" name="date"> <br>
+		month			: <input type="month" name="month"> <br>
+		time			: <input type="time" name="time"> <br>
+		datetime-local	: <input type="datetime-local" name="datetime-local"> <br>
+		<br>
 	
+		<label for="email2"></label>
+		<input type="text" name="email2" id="email2">
+
+		<select name="domain" id="domain"></select>
+
+		<input type="file" name="file" />
+		<br>
 	
-	 
+	</from>
+
 	 
 </body>
 </html>
